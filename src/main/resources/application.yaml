@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://192.168.137.240:5432/sys_demo
+    username: postgres
+    password: postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: update  # 第一次建表create  后面用update，要不然每次重启都会新建表
+    show-sql: true
+  devtools:
+    restart:
+      enabled: false
